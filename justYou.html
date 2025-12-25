@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+</head>
+<body>
+
+   <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="letter.html">Letter</a></li>
+      <li><a href="moments.html">Moments</a></li>
+      <li><a href="justYou.html">Just You</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+    <div><img src="justYouPics/IMG_20230725_09571795.jpeg" alt=""></div>
+    <div><img src="justYouPics/IMG_20240913_202254.jpg" alt=""></div>
+    <div><img src="justYouPics/IMG20230520125215.jpg" alt=""></div>
+    <div><img src="justYouPics/received_435380264836767.jpeg" alt=""></div>
+    <div><img src="justYouPics/received_534863391716121.jpeg" alt=""></div>
+    <div><img src="justYouPics/Snapchat-558377597.jpg" alt=""></div>
+    
+  </div>
+
+  <p class="click" style="text-align: center;">You can click the photos</p>
+  
+
+  <div  class="music_logo">
+    <img src="pics/download__11_-removebg-preview.png" alt="">
+  </div>
+
+  <div class="music">
+    <audio src="music/TikTok_Make_Your_Day_1766488018514.mp3" controls></audio>
+  </div>
+</body>
+</html>
+
+<style>
+
+  .music_logo{
+   
+    display: inline-block;
+    vertical-align: center;
+    margin-left: 30px;
+    
+  }
+
+  .music_logo img{
+    width: 100px;
+    
+  }
+
+  .music{
+    display: inline-block;
+    vertical-align: top;
+   
+    height: 104px;
+  }
+
+  .music audio{
+    margin-top: 30px;
+    width: 250px;
+    height: 30px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 20px;
+  }
+
+  .wrapper {
+  display: flex;
+  width: 90%;
+  max-width: 800px;
+  height: 220px;
+  margin: 40px auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.wrapper div {
+  flex: 1;
+  transition: flex 0.5s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.wrapper div:hover {
+  flex: 4;
+}
+
+.wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+   body{
+      margin: 0;
+      background-color: rgb(246, 231, 246);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* NAV */
+    nav{
+      background-color: rgb(218, 138, 218);
+      width: 100%;
+      height: 50px;
+    }
+
+    a{
+      text-decoration: none;
+      color: purple;
+    }
+
+    a:hover{
+      text-decoration: underline;
+    }
+
+    nav ul{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      list-style: none;
+      font-size: 18px;
+    }
+
+    nav li{
+      cursor: pointer;
+    }
+
+
+
+
+     /* RESPONSIVE */
+    @media (max-width: 420px){
+      nav{
+        width: 100%;
+      }
+
+      nav ul{
+        font-size: 16px;
+      }
+
+      .title p{
+        font-size: 28px;
+      }
+
+      .text{
+        font-size: 18px;
+      }
+    }
+</style>
